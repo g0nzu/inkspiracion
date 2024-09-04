@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="telephone=no" name="format-detection">
+	<title>Tatoo's</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/override.css" />
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<div class="tt-splash">
+		<p>Tattoo's</p>
+	</div>
+	<header class="navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<div class="tt-drawer pull-left">
+						<a href="#" class="burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+					<div class="tt-phone hidden-xs hidden-sm">
+						<p><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;+34 694 28 68 88</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="tt-logo" data-menuanchor="home">
+						<a href="#home" title="Tatoo">Inkspiracion</a>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 hidden-xs hidden-sm">
+					<div class="tt-booking text-right">
+						<a href="#" data-toggle="modal" data-target="#tt-modal">Enroll to the master</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<aside class="closed">
+		<div class="tt-phone visible-xs visible-sm">
+			<p><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;+34 694 28 68 88</p>
+		</div>
+		<div class="tt-booking visible-xs visible-sm">
+			<a href="#" data-toggle="modal" data-target="#tt-modal">Enroll to the master</a>
+		</div>
+		<ul>
+			<li data-menuanchor="home" class="active">
+				<a href="#home">Home</a>
+			</li>
+			<li data-menuanchor="services">
+				<a href="#services">Services</a>
+			</li>
+			<li data-menuanchor="team">
+				<a href="#team">Team</a>
+			</li>
+			<li data-menuanchor="gallery">
+				<a href="#gallery">Gallery</a>
+			</li>
+			<li data-menuanchor="reviews">
+				<a href="#reviews">Reviews</a>
+			</li>
+			<li data-menuanchor="contacts">
+				<a href="#contacts">Contacts</a>
+			</li>
+		</ul>
+	</aside>
+	<nav class="hidden-xs hidden-sm">
+		<ul id="tt-menu">
+			<li data-menuanchor="home" class="active">
+				<a href="#home"></a>
+			</li>
+			<li data-menuanchor="services">
+				<a href="#services"></a>
+			</li>
+			<li data-menuanchor="team">
+				<a href="#team"></a>
+			</li>
+			<li data-menuanchor="gallery">
+				<a href="#gallery"></a>
+			</li>
+			<li data-menuanchor="reviews">
+				<a href="#reviews"></a>
+			</li>
+			<li data-menuanchor="contacts">
+				<a href="#contacts"></a>
+			</li>
+		</ul>
+	</nav>
+	<div id="fullpage">
+		<div class="tt-section home">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-1 col-xs-8">
+						<!-- Sustituyendo el texto por la imagen -->
+						<img src="images/gallery/inkspiracion_logo.png" alt="Inkspiracion Logo" style="max-width:100%; height:auto;">
+						<span></span>
+					</div>	
+					<div class="col-md-4 col-md-offset-2 col-xs-8">
+						<div id="carousel-home-screen" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									In "Tattoo's" there are real professionals and fans of their business. Artists regularly participate in professional conventions and take prizes on them. Our salon of tattoos is a well-coordinated team of professionals, which will help you to realize your ideas at the highest level.
+								</div>
+								<div class="item">
+									In "Tattoo's" there are real professionals and fans of their business. Artists regularly participate in professional conventions and take prizes on them. Our salon of tattoos is a well-coordinated team of professionals, which will help you to realize your ideas at the highest level.
+								</div>
+								<div class="item">
+									In "Tattoo's" there are real professionals and fans of their business. Artists regularly participate in professional conventions and take prizes on them. Our salon of tattoos is a well-coordinated team of professionals, which will help you to realize your ideas at the highest level.
+								</div>
+							</div>
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-home-screen" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-home-screen" data-slide-to="1"></li>
+								<li data-target="#carousel-home-screen" data-slide-to="2"></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tt-section services">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-1 col-xs-8">
+						<div class="tt-breadcrumbs">
+							<p>Services</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div id="carousel-service-screen" class="carousel slide" data-ride="carousel" data-interval="false">
+						<div class="carousel-inner">
+							<div class="item active col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-8">
+								<div class="tt-number">
+									<span>01</span>
+								</div>
+								<a href="#" data-slide="0" data-toggle="modal" data-target="#tt-modal-service">
+									<span>Tattoos</span>
+									<img src="http://placehold.it/160x600?text=S1" alt="Tattoos" title="Tattoos" class="pull-right" />
+								</a>
+							</div>
+							<div class="item col-md-1 col-sm-1 col-xs-8">
+								<div class="tt-number">
+									<span>02</span>
+								</div>
+								<a href="#" data-slide="1" data-toggle="modal" data-target="#tt-modal-service">
+									<span>Correction of tattoos</span>
+									<img src="http://placehold.it/160x600?text=S2" alt="Correction of tattoos" title="Correction of tattoos" class="pull-right" />
+								</a>
+							</div>
+							<div class="item col-md-1 col-sm-1 col-xs-8">
+								<div class="tt-number">
+									<span>03</span>
+								</div>
+								<a href="#" data-slide="2" data-toggle="modal" data-target="#tt-modal-service">
+									<span>Removal of tattoos</span>
+									<img src="http://placehold.it/160x600?text=S3" alt="Removal of tattoos" title="Removal of tattoos" class="pull-right" />
+								</a>
+							</div>
+							<div class="item col-md-1 col-sm-1 col-xs-8">
+								<div class="tt-number">
+									<span>04</span>
+								</div>
+								<a href="#" data-slide="3" data-toggle="modal" data-target="#tt-modal-service">
+									<span>Permanent makeup</span>
+									<img src="http://placehold.it/160x600?text=S4" alt="Permanent makeup" title="Permanent makeup" class="pull-right" />
+								</a>
+							</div>
+							<div class="item col-md-1 col-sm-1 col-xs-8">
+								<div class="tt-number">
+										<span>05</span>
+								</div>
+								<a href="#" data-slide="4" data-toggle="modal" data-target="#tt-modal-service">
+									<span>Piercing</span>
+									<img src="http://placehold.it/160x600?text=S5" alt="Piercing" title="Piercing" class="pull-right" />
+								</a>
+							</div>
+							<div class="item col-md-1 col-sm-1 col-xs-8">
+								<div class="tt-number">
+									<span>06</span>
+								</div>
+								<a href="#" data-slide="5" data-toggle="modal" data-target="#tt-modal-service">
+									<span>Training</span>
+									<img src="http://placehold.it/160x600?text=S6" alt="Training" title="Training" class="pull-right" />
+								</a>
+							</div>
+						</div>
+						<ol class="carousel-indicators visible-xs">
+							<li data-target="#carousel-service-screen" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-service-screen" data-slide-to="1"></li>
+							<li data-target="#carousel-service-screen" data-slide-to="2"></li>
+							<li data-target="#carousel-service-screen" data-slide-to="3"></li>
+							<li data-target="#carousel-service-screen" data-slide-to="4"></li>
+							<li data-target="#carousel-service-screen" data-slide-to="5"></li>
+						  </ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tt-section team">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-1 col-xs-8">
+						<div class="tt-breadcrumbs">
+							<p>Team</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-1 col-sm-4 col-xs-4">
+						<div class="tt-counter"></div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-4 text-right">
+						<a class="left carousel-control" href="#carousel-team-screen" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+  						</a>
+  						<a class="right carousel-control" href="#carousel-team-screen" data-slide="next">
+    						<i class="fa fa-angle-right"></i>
+  						</a>
+					</div>
+					<div class="col-md-6 col-md-offset-1 col-xs-8">
+						<div id="carousel-team-screen" class="carousel slide" data-ride="carousel" data-interval="false">
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="row">
+										<div class="col-md-3 col-xs-8">
+											<h2> Nini </h2>
+											<div class="tt-personal">
+												<img src="http://placehold.it/480x520?text=Jon%20Doe" alt="Jon Doe" title="Jon Doe" class="pull-left" />
+												<div class="tt-meta">
+													<span>Reviews (25)</span>
+													<span>Projects (37)</span>
+												</div>
+
+											</div>
+										</div>
+										<div class="col-md-4 col-md-offset-1 col-xs-8">
+											<p class="tt-spec">
+												<span>Specialization:</span>
+												Tattoo & piercing.
+											</p>
+											<p>Makes unique complex works in the style of Neotraditional, Oldschool, Newschool.
+	Member of international tattoo conventions. Teaches in the "Tatu School" class art tattoo.
+	In the drawing, he prefers bright colors and detailed study of the drawing. "The very figure, namely its content and place of its application should be harmoniously combined with the person." He believes that the main art and search is in the tattoo, therefore he likes to experiment with different styles, creating unique artwork.</p>
+											<a href="#" data-toggle="modal" data-target="#tt-modal" data-master="Jon Doe" class="enroll">Enroll to this master</a>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-md-3 col-xs-8">
+											<h2>Yuli</h2>
+											<div class="tt-personal">
+												<img src="http://placehold.it/480x520?text=David%20Doe" alt="David Doe" title="David Doe" class="pull-left" />
+												<div class="tt-meta">
+													<span>Reviews (15)</span>
+													<span>Projects (21)</span>
+												</div>
+
+											</div>
+										</div>
+										<div class="col-md-4 col-md-offset-1 col-xs-8">
+											<p class="tt-spec">
+												<span>Specialization:</span>
+												Tattoo.
+											</p>
+											<p>Makes unique complex works in the style of Neotraditional, Oldschool, Newschool.
+	Member of international tattoo conventions. Teaches in the "Tatu School" class art tattoo.
+	In the drawing, he prefers bright colors and detailed study of the drawing. "The very figure, namely its content and place of its application should be harmoniously combined with the person." He believes that the main art and search is in the tattoo, therefore he likes to experiment with different styles, creating unique artwork.</p>
+											<a href="#" data-toggle="modal" data-target="#tt-modal" data-master="David Doe" class="enroll">Enroll to this master</a>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-md-3 col-xs-8">
+											<h2>Alexander Doe</h2>
+											<div class="tt-personal">
+												<img src="http://placehold.it/480x520?text=Alexander%20Doe" alt="Alexander Doe" title="Alexander Doe" class="pull-left" />
+												<div class="tt-meta">
+													<span>Reviews (46)</span>
+													<span>Projects (53)</span>
+												</div>
+
+											</div>
+										</div>
+										<div class="col-md-4 col-md-offset-1 col-xs-8">
+											<p class="tt-spec">
+												<span>Specialization:</span>
+												Piercing.
+											</p>
+											<p>Makes unique complex works in the style of Neotraditional, Oldschool, Newschool.
+	Member of international tattoo conventions. Teaches in the "Tatu School" class art tattoo.
+	In the drawing, he prefers bright colors and detailed study of the drawing. "The very figure, namely its content and place of its application should be harmoniously combined with the person." He believes that the main art and search is in the tattoo, therefore he likes to experiment with different styles, creating unique artwork.</p>
+											<a href="#" data-toggle="modal" data-target="#tt-modal" data-master="Alexander Doe" class="enroll">Enroll to this master</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tt-section gallery">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-1 cpl-xs-8">
+						<div class="tt-breadcrumbs">
+							<p>Gallery</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-md-6 col-md-offset-1 col-md-8 col-xs-8 tt-scrollpane">
+						<div id="captions" class="js-gallery">
+							<a class="col-md-3 col-sm-4 col-xs-8" href="http://placehold.it/597x374?text=Image%201" data-sub-html="<strong>Author: </strong>Jon Doe">
+                            	<img src="http://placehold.it/597x374?text=Image%201" alt="Image 1">
+								<div class="overlay hidden-xs hidden-sm">
+									<i class="fa fa-search"></i>
+								</div>
+                        	</a>
+							<a class="col-md-3 col-sm-4 col-xs-8" href="http://placehold.it/597x374?text=Image%202" data-sub-html="<strong>Author: </strong>Melissa Doe">
+                            	<img src="http://placehold.it/597x374?text=Image%202" alt="Image 2">
+								<div class="overlay hidden-xs hidden-sm">
+									<i class="fa fa-search"></i>
+								</div>
+                        	</a>
+							<a class="col-md-2 col-sm-4 col-xs-8" href="http://placehold.it/597x374?text=Image%203" data-sub-html="<strong>Author: </strong>Samantha Doe">
+                            	<img src="http://placehold.it/597x374?text=Image%203" alt="Image 3">
+								<div class="overlay hidden-xs hidden-sm">
+									<i class="fa fa-search"></i>
+								</div>
+                        	</a>
+							<a class="col-md-3 col-sm-4 col-xs-8" href="http://placehold.it/597x374?text=Image%204" data-sub-html="<strong>Author: </strong>Michael Doe">
+                            	<img src="http://placehold.it/597x374?text=Image%204" alt="Image 4">
+								<div class="overlay hidden-xs hidden-sm">
+									<i class="fa fa-search"></i>
+								</div>
+                        	</a>
+							<a class="col-md-2 col-sm-4 col-xs-8" href="http://placehold.it/597x374?text=Image%205" data-sub-html="<strong>Author: </strong>Michael Doe">
+                            	<img src="http://placehold.it/597x374?text=Image%205" alt="Image 5">
+								<div class="overlay hidden-xs hidden-sm">
+									<i class="fa fa-search"></i>
+								</div>
+                        	</a>
+							<a class="col-md-3 col-sm-4 col-xs-8" href="http://placehold.it/597x374?text=Image%206" data-sub-html="<strong>Author: </strong>Michael Doe">
+                            	<img src="http://placehold.it/597x374?text=Image%206" alt="Image 6">
+								<div class="overlay hidden-xs hidden-sm">
+									<i class="fa fa-search"></i>
+								</div>
+                        	</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tt-section reviews">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-1 col-xs-8">
+						<div class="tt-breadcrumbs">
+							<p>Reviews</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-md-4 col-md-offset-2 col-sm-8 col-xs-8">
+						<div id="carousel-reviews-screen" class="carousel slide" data-ride="carousel" data-interval="999999">
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<h2>Katy</h2>
+									<p>In "Tattoo's" there are real professionals and fans of their business. Artists regularly participate in professional conventions and take prizes on them. Our salon of tattoos is a well-coordinated team of professionals, which will help you to realize your ideas at the highest level.</p>
+									<div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-4">
+										<div class="tt-before">
+											<span>Before</span>
+											<img src="http://placehold.it/338x211?text=R1_Before" alt="Katy review: before" title="Katy review: before" />
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-4">
+										<div class="tt-after">
+											<span>Before</span>
+											<img src="http://placehold.it/338x211?text=R1_After" alt="Katy review: after" title="Katy review: after" />
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<h2>Mary</h2>
+									<p>In "Tattoo's" there are real professionals and fans of their business. Artists regularly participate in professional conventions and take prizes on them. Our salon of tattoos is a well-coordinated team of professionals, which will help you to realize your ideas at the highest level.</p>
+									<div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-4">
+										<div class="tt-before">
+											<span>Before</span>
+											<img src="http://placehold.it/338x211?text=R2_Before" alt="Mary review: before" title="Mary review: before" />
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-4">
+										<div class="tt-after">
+											<span>Before</span>
+											<img src="http://placehold.it/338x211?text=R2_After" alt="Mary review: after" title="Mary review: after" />
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<h2>Jenny</h2>
+									<p>In "Tattoo's" there are real professionals and fans of their business. Artists regularly participate in professional conventions and take prizes on them. Our salon of tattoos is a well-coordinated team of professionals, which will help you to realize your ideas at the highest level.</p>
+									<div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-4">
+										<div class="tt-before">
+											<span>Before</span>
+											<img src="http://placehold.it/338x211?text=R3_Before" alt="Jenny review: before" title="Jenny review: before" />
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-4">
+										<div class="tt-after">
+											<span>Before</span>
+											<img src="http://placehold.it/338x211?text=R3_After" alt="Jenny review: after" title="Jenny review: after" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-reviews-screen" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-reviews-screen" data-slide-to="1"></li>
+								<li data-target="#carousel-reviews-screen" data-slide-to="2"></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tt-section contacts">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-8">
+						<div class="tt-info">
+							<p><i class="fa fa-map-marker"></i>Avinguda País Valenciá, 2, 31-B, Finestrat</p>
+							<p><i class="fa fa-clock-o"></i>Daily, from 10.00 to 22.00</p>
+							<p><i class="fa fa-envelope-open"></i>inkspiracioart.tattoo@gmail.com</p>
+							<p><i class="fa fa-phone"></i>+34 694 28 68 88</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="map"></div>
+		</div>
+	</div>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-8">
+					<div class="tt-copyright">
+						<p>&copy; Tattoo's, 2017. <span>All rights reseved</span></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-8">
+					<div class="tt-social pull-right">
+						<a href="#" target="_blank">
+							<i class="fa fa-facebook-f"></i>
+						</a>
+						<a href="#" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#" target="_blank">
+							<i class="fa fa-vk"></i>
+						</a>
+						<a href="#" target="_blank">
+							<i class="fa fa-google-plus"></i>
+						</a>
+						<a href="#" target="_blank">
+							<i class="fa fa-behance"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal fade" id="tt-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="row">
+						<div class="col-md-8 col-xs-8">
+							<h4 class="modal-title">Enroll to the master</h4>
+							<a href="#" class="close" data-dismiss="modal">&times;</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<form action="php/handler.php" method="post">
+							<div class="col-md-3 col-xs-8">
+								<input type="text" name="name" placeholder="Your name *" />
+							</div>
+							<div class="col-md-2 col-xs-8">
+								<input type="text" name="phone" placeholder="Your phone *" />
+							</div>
+							<div class="col-md-3 col-xs-8">
+								<input type="text" name="master" placeholder="Name of the master (if known)" />
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-md-4 col-xs-8 response pull-left">
+							<img src="images/loading.gif" alt="Loading..." class="load hidden pull-left "/>
+							<p class="pull-left"></p>
+						</div>
+						<div class="col-md-4 col-xs-8">
+							<button type="button">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="tt-modal-service" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<a class="left carousel-control" href="#carousel-popup" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a class="right carousel-control" href="#carousel-popup" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<a href="#" class="close pull-right" data-dismiss="modal">&times;</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div id="carousel-popup" class="carousel slide" data-ride="carousel" data-interval="false">
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="collage">
+										<img src="http://placehold.it/597x374?text=S1_Popup" alt="Image 1" title="Image 1" class="img-1" />
+										<img src="http://placehold.it/597x374?text=S1_Popup" alt="Image 2" class="img-2" />
+									</div>
+									<div class="share">
+										<ul>
+											<li>
+												<i class="fa fa-facebook"></i>
+												<span>816</span>
+											</li>
+											<li>
+												<i class="fa fa-twitter"></i>
+												<span>711</span>
+											</li>
+											<li>
+												<i class="fa fa-vk"></i>
+												<span>964</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="text">
+										<h2>Tatoos</h2>
+										<p>The art of drawing tattoos is as old as the history of mankind. Today, tattoos are a modern and stylish decoration of various parts of the body.</p>
+										<p>To make a tattoo in London, many salons and studios offer. Experienced masters of salon "Tattoo's" possess incredible taste and perform their work quickly and safely for health. We can make tattoos for reasonable money and at the same time have almost no pain. You can register with the master at any time: both through the general form of the record, and to each master individually.</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-1 col-md-offset-3 col-sm-2 col-sm-offset-2 hidden-xs">
+									<div class="meta">
+										<span>30</span>
+										<p>Sketches to choose from</p>
+									</div>
+								</div>
+								<div class="col-md-1 col-sm-2 hidden-xs">
+									<div class="meta">
+										<span>839</span>
+										<p>Completed work</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="collage">
+										<img src="http://placehold.it/597x374?text=S2_Popup" alt="Image 1" title="Image 1" class="img-1" />
+										<img src="http://placehold.it/597x374?text=S2_Popup" alt="Image 2" title="Image 2" class="img-2" />
+									</div>
+									<div class="share">
+										<ul>
+											<li>
+												<i class="fa fa-facebook"></i>
+												<span>861</span>
+											</li>
+											<li>
+												<i class="fa fa-twitter"></i>
+												<span>141</span>
+											</li>
+											<li>
+												<i class="fa fa-vk"></i>
+												<span>974</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="text">
+										<h2>Correction of tatoos</h2>
+										<p>The art of drawing tattoos is as old as the history of mankind. Today, tattoos are a modern and stylish decoration of various parts of the body.</p>
+										<p>To make a tattoo in London, many salons and studios offer. Experienced masters of salon "Tattoo's" possess incredible taste and perform their work quickly and safely for health. We can make tattoos for reasonable money and at the same time have almost no pain. You can register with the master at any time: both through the general form of the record, and to each master individually.</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-1 col-md-offset-3 col-sm-2 col-sm-offset-2 hidden-xs">
+									<div class="meta">
+										<span>15</span>
+										<p>Sketches to choose from</p>
+									</div>
+								</div>
+								<div class="col-md-1 col-sm-2 hidden-xs">
+									<div class="meta">
+										<span>952</span>
+										<p>Completed work</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="collage">
+										<img src="http://placehold.it/597x374?text=S3_Popup" alt="Image 1" title="Image 1" class="img-1" />
+										<img src="http://placehold.it/597x374?text=S3_Popup" alt="Image 2" title="Image 2" class="img-2" />
+									</div>
+									<div class="share">
+										<ul>
+											<li>
+												<i class="fa fa-facebook"></i>
+												<span>246</span>
+											</li>
+											<li>
+												<i class="fa fa-twitter"></i>
+												<span>521</span>
+											</li>
+											<li>
+												<i class="fa fa-vk"></i>
+												<span>493</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="text">
+										<h2>Removal of tatoos</h2>
+										<p>The art of drawing tattoos is as old as the history of mankind. Today, tattoos are a modern and stylish decoration of various parts of the body.</p>
+										<p>To make a tattoo in London, many salons and studios offer. Experienced masters of salon "Tattoo's" possess incredible taste and perform their work quickly and safely for health. We can make tattoos for reasonable money and at the same time have almost no pain. You can register with the master at any time: both through the general form of the record, and to each master individually.</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-1 col-md-offset-3 col-sm-2 col-sm-offset-2 hidden-xs">
+									<div class="meta">
+										<span>62</span>
+										<p>Sketches to choose from</p>
+									</div>
+								</div>
+								<div class="col-md-1 col-sm-2 hidden-xs">
+									<div class="meta">
+										<span>255</span>
+										<p>Completed work</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="collage">
+										<img src="http://placehold.it/597x374?text=S4_Popup" alt="Image 1" title="Image 1" class="img-1" />
+										<img src="http://placehold.it/597x374?text=S4_Popup" alt="Image 2" title="Image 2" class="img-2" />
+									</div>
+									<div class="share">
+										<ul>
+											<li>
+												<i class="fa fa-facebook"></i>
+												<span>756</span>
+											</li>
+											<li>
+												<i class="fa fa-twitter"></i>
+												<span>355</span>
+											</li>
+											<li>
+												<i class="fa fa-vk"></i>
+												<span>752</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="text">
+										<h2>Permanent makeup</h2>
+										<p>The art of drawing tattoos is as old as the history of mankind. Today, tattoos are a modern and stylish decoration of various parts of the body.</p>
+										<p>To make a tattoo in London, many salons and studios offer. Experienced masters of salon "Tattoo's" possess incredible taste and perform their work quickly and safely for health. We can make tattoos for reasonable money and at the same time have almost no pain. You can register with the master at any time: both through the general form of the record, and to each master individually.</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-1 col-md-offset-3 col-sm-2 col-sm-offset-2 hidden-xs">
+									<div class="meta">
+										<span>25</span>
+										<p>Sketches to choose from</p>
+									</div>
+								</div>
+								<div class="col-md-1 col-sm-2 hidden-xs">
+									<div class="meta">
+										<span>366</span>
+										<p>Completed work</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="collage">
+										<img src="http://placehold.it/597x374?text=S5_Popup" alt="Image 1" title="Image 1" class="img-1" />
+										<img src="http://placehold.it/597x374?text=S5_Popup" alt="Image 2" title="Image 2" class="img-2" />
+									</div>
+									<div class="share">
+										<ul>
+											<li>
+												<i class="fa fa-facebook"></i>
+												<span>355</span>
+											</li>
+											<li>
+												<i class="fa fa-twitter"></i>
+												<span>582</span>
+											</li>
+											<li>
+												<i class="fa fa-vk"></i>
+												<span>876</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="text">
+										<h2>Piercing</h2>
+										<p>The art of drawing tattoos is as old as the history of mankind. Today, tattoos are a modern and stylish decoration of various parts of the body.</p>
+										<p>To make a tattoo in London, many salons and studios offer. Experienced masters of salon "Tattoo's" possess incredible taste and perform their work quickly and safely for health. We can make tattoos for reasonable money and at the same time have almost no pain. You can register with the master at any time: both through the general form of the record, and to each master individually.</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-1 col-md-offset-3 col-sm-2 col-sm-offset-2 hidden-xs">
+									<div class="meta">
+										<span>25</span>
+										<p>Sketches to choose from</p>
+									</div>
+								</div>
+								<div class="col-md-1 col-sm-2 hidden-xs">
+									<div class="meta">
+										<span>528</span>
+										<p>Completed work</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="collage">
+										<img src="http://placehold.it/597x374?text=S6_Popup" alt="Image 1" title="Image 1" class="img-1" />
+										<img src="http://placehold.it/597x374?text=S6_Popup" alt="Image 2" title="Image 2" class="img-2" />
+									</div>
+									<div class="share">
+										<ul>
+											<li>
+												<i class="fa fa-facebook"></i>
+												<span>528</span>
+											</li>
+											<li>
+												<i class="fa fa-twitter"></i>
+												<span>839</span>
+											</li>
+											<li>
+												<i class="fa fa-vk"></i>
+												<span>268</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-8">
+									<div class="text">
+										<h2>Training</h2>
+										<p>The art of drawing tattoos is as old as the history of mankind. Today, tattoos are a modern and stylish decoration of various parts of the body.</p>
+										<p>To make a tattoo in London, many salons and studios offer. Experienced masters of salon "Tattoo's" possess incredible taste and perform their work quickly and safely for health. We can make tattoos for reasonable money and at the same time have almost no pain. You can register with the master at any time: both through the general form of the record, and to each master individually.</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-md-1 col-md-offset-3 col-sm-2 col-sm-offset-2 hidden-xs">
+									<div class="meta">
+										<span>55</span>
+										<p>Sketches to choose from</p>
+									</div>
+								</div>
+								<div class="col-md-1 col-sm-2 hidden-xs">
+									<div class="meta">
+										<span>559</span>
+										<p>Completed work</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<!-- jQuery library -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Google maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB5pbnNMdVbeV7Bx2EFNwW2EAy_9P2lxCA"></script>
+	<!-- Twitter Bootstrap JS file -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- jQuery plugins -->
+	<script src="js/plugins/jquery.mousewheel.min.js"></script>
+	<script src="js/plugins/jquery.swipe.min.js"></script>
+	<script src="js/plugins/jquery.fullpage.min.js"></script>
+	<script src="js/plugins/jquery.jscrollpane.min.js"></script>
+	<script src="js/plugins/jquery.lightgallery.js"></script>
+	<script src="js/plugins/jquery.maskedinput.min.js"></script>
+	<!-- LightGallery extension -->
+	<script src="js/plugins/lightgallery.fullscreen.js"></script>
+	<script src="js/plugins/lightgallery.thumbnail.js"></script>
+	<script src="js/plugins/lightgallery.zoom.js"></script>
+	<script src="js/plugins/lightgallery.hash.js"></script>
+	<script src="js/plugins/lightgallery.share.js"></script>
+	<script src="js/plugins/lightgallery.autoplay.js"></script>
+	<script src="js/override.js"></script>	
+	<script>
+		function initMap() {
+    var geocoder = new google.maps.Geocoder();
+    var mapOptions = {
+        zoom: 15, // Nivel de zoom ajustado
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    geocoder.geocode({ 'address': 'Avinguda País Valenciá, 2, 31-B, Finestrat' }, function(results, status) {
+        if (status === 'OK') {
+            map.setCenter(results[0].geometry.location);
+
+            var marker = new google.maps.Marker({
+                map: map,
+                position: results[0].geometry.location
+            });
+        } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+        }
+    });
+}
+
+// Asegúrate de llamar a initMap cuando la API de Google Maps esté lista
+google.maps.event.addDomListener(window, 'load', initMap);
+	</script>
+</body>
+</html>

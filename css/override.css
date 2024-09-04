@@ -1,0 +1,288 @@
+@import url('fonts.css');
+@import url('font-awesome.min.css');
+@import url('jquery.jscrollpane.css');
+@import url('lightgallery.css');
+
+/*
+	1. Global
+		1.1 Splash screen
+		1.2 Enroll modal
+		1.3 Header
+		1.4 Main navigation
+		1.5 Navigation drawer
+		1.6 Footer
+		1.7 Bootstrap override
+	2. Home section
+	3. Services section
+		3.1 Service modal
+	4. Team section
+	5. Reviews section
+	6. Price section
+	7. Gallery section
+	8. Contact section
+	9. Responcives
+		9.1 Phones: Portrait and Landscape
+		9.2 Tablets: Portrait
+		9.3 Tablets: Landscape
+		9.4 Desktop	
+*/
+
+/* 1. Global */
+* {margin: 0; padding: 0;}
+html {overflow: hidden; height: 100%;}
+body {background: #000; color: #fff; font-family: 'MuseoSansRegular'; padding: 0!important;}
+a, a:hover {text-decoration: none; color: #fff;}
+ul, ol {list-style-type: none; margin: 0; padding: 0;}
+input:focus, button:focus {outline: none;}
+a:focus {color: #fff; text-decoration: none; outline: none;}
+.tt-breadcrumbs {text-transform: uppercase; font-family: 'MuseoSansBold'; font-size: 16px; margin: 0 0 40px 0; max-height: 20px;}
+.tt-breadcrumbs p {position: relative;}
+.tt-breadcrumbs p::after {content: ''; position: absolute; display: block; height: 1px; width: 40px; left: 0; bottom: -10px; background: #393939;}
+#map {width: 100%; height: 100%;}
+.tt-section {position: relative;}
+.tt-scrollpane {height: 550px;}
+.response {line-height: 20px; text-align: left;}
+.response img {width: 20px; height: 20px; margin: 0 10px 0 0;}
+table {width: 100%;}
+.text-right {text-align: right;}
+.tt-phone p {position: relative; padding: 0 0 0 25px; font-size: 16px; font-family: 'MuseoSansMedium'; margin: 0 0 0 25px; text-align: left;}
+.tt-phone p::before {content: ''; position: absolute; display: block; width: 20px; height: 1px; background: #fff; top: 40px; left: 0;}
+.tt-booking a {padding: 10px 20px; border: 1px solid #fff; border-radius: 4px; display: inline-block; font-family: 'MuseoSansBlack'; transition: all .4s ease; line-height: 1.3;}
+.tt-booking a:hover {color: #000; background: #fff;}
+	/* 1.1 Splash screen */
+	.tt-splash {position: fixed; top: 0; left: 0; width: 100%; height: 100%; text-align: center; font-family: 'MuseoSansBold'; text-transform: uppercase; z-index: 1040; padding: 25% 0; background: #000;}
+	.tt-splash p {position: relative; float: left; top: 50%; font-size: 200%; width: 100%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+
+	/* 1.2 Enroll modal */
+	#tt-modal button {padding: 10px 20px; border: 1px solid #fff; border-radius: 4px; font-family: 'MuseoSansBlack'; transition: all .4s ease; background: none;}
+	#tt-modal button:hover {color: #000; background: #fff;}
+	#tt-modal input {border: 1px solid transparent; border-bottom: 1px solid #393939; border-radius: 3px; background: none; padding: 10px 15px; color: #fff; text-transform: uppercase; width: 100%; margin: 0 0 10px 0;}
+	#tt-modal input:focus {border: 1px solid #fff;}
+	#tt-modal .modal-header h4 {text-transform: uppercase; font-family: 'MuseoSansMedium'; font-size: 30px; text-align: center;}
+	#tt-modal .modal-header .close {position: absolute; top: -60px; left: 50%; }
+	#tt-modal .modal-body {padding-top: 60px; padding-bottom: 60px;}
+	#tt-modal .modal-footer, #tt-modal .modal-header, #tt-modal-service .modal-header {border: none;}
+	#tt-modal .modal-dialog {margin: 20% auto 0;}
+
+	/* 1.3 Header */
+	header {height: 80px; line-height: 80px; background: #000;}
+	header .tt-logo {font-family: 'MuseoSansBold'; font-size: 24px; text-align: center; text-transform: uppercase;}
+	header .tt-logo a {color: #fff;}
+	header .burger, header .cross {width: 20px; height: 10px; position: relative; -webkit-transition: .4s ease-in-out; -ms-transition: .4s ease-in-out; transition: .4s ease-in-out; display: block; margin: 35px 0;}
+	header .burger span, header .cross span {display: block; position: absolute; height: 2px; width: 100%; background: #fff; opacity: 1; left: 0; -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; transition: .25s ease-in-out;}
+	header .burger span:nth-child(1) {top: 0px;}
+	header .burger span:nth-child(2) {top: 4px;}
+	header .burger span:nth-child(3) {top: 8px;}
+	header .cross span:nth-child(1) {top: 4px; -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg);}
+	header .cross span:nth-child(2) {opacity: 0; left: -20px;}
+	header .cross span:nth-child(3) {top: 4px; -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg);}
+
+	/* 1.4 Main navigation */
+	nav {position: fixed; right: 20px; top: 300px; z-index: 1; background: #000; padding: 20px 20px 0 20px;}
+	nav ul {position: relative;}
+	nav ul::before {content: ''; position: absolute; display: block; width: 1px; height: 40px; background: #fff; top: -60px; right: 5px; z-index: 3;}
+	nav ul::after {content: ''; position: absolute; display: block; width: 50px; height: 60px; background: #000; top: -80px; right: -20px; z-index: 2;}
+	nav li {display: block; width: 10px; height: 10px; border-radius: 50%; border: 2px solid #fff; margin: 0 0 20px 0;}
+	nav .active {background: #fff;}
+	nav li a {display: block; width: 100%; height: 100%;}
+
+	/* 1.5 Navigation drawer */
+	aside {position: fixed; left: 0; top: 0; background: rgba(0, 0, 0, .8); height: 100%; width: 300px; z-index: 20; margin-left: -300px; padding: 200px 0 0;}
+	aside ul {display: none;}
+	aside li {transition: all .4s ease; display: none;}
+	aside li a {padding: 10px 40px; opacity: .3; display: block;}
+	aside li.active a {opacity: 1;}
+	aside li:hover, aside li.active {background: rgba(255, 255, 255, .1);}
+	aside li:hover a {color: #fff;}
+
+	/* 1.6 Footer */
+	footer {position: absolute; bottom: 0; background: #000; z-index: 1; width: 100%; height: 50px; line-height: 50px;}
+	footer .tt-copyright p  {font-size: 12px; text-transform: uppercase; font-family: 'MuseoSansMedium';}
+	footer .tt-copyright p span  {color: #696969;}
+	footer .tt-social a  {width: 30px; height: 30px; border: 1px solid #fff; text-align: center; line-height: 30px; border-radius: 4px; transition: all 0.4s ease; margin: 0 0 0 10px; display: inline-block;}
+	footer .tt-social a:hover  {background: #fff; color: #000;}
+
+	/* 1.7 Bootstrap override */
+	.carousel-inner {margin: 0 0 50px 0;}
+	.carousel-indicators {position: relative;}
+	.carousel-indicators li {width: 6px; height: 6px; background: #696969; border: none; margin: 0 0 0 16px;}
+	.carousel-indicators .active {width: 6px; height: 6px; background: #fff; border: none; position: relative;margin: 0 0 0 16px;}
+	.carousel-indicators .active::after {content: ''; width: 18px; height: 18px; border: 2px solid #fff; position: absolute; top: -6px; left: -6px; border-radius: 50%;}
+	.carousel-item  {font-family: 'MuseoSansLight'; font-size: 16px;}
+	.carousel-control {display: inline-block; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #fff; text-align: center; line-height: 27px; opacity: 1; position: relative; font-size: 15px; transition: all 0.4s ease;}
+	.carousel-control:hover {opacity: 1; background: #fff; color: #000;}
+	 .modal {background: #000; padding: 0!important;}
+	.modal-header .close {display: block; font-size: 36px; font-family: 'MuseoSansLight'; width: 20px; height: 20px; opacity: .2; font-weight: normal; text-shadow: none;}
+	.modal-header a:hover {opacity: 1;}
+
+/* 2. Home Section */
+.home {background-size: 65%; text-align: center;}
+.home h1 {font-size: 72px; font-family: 'MuseoSansLight'; text-transform: uppercase; margin: 110px 0 40px 0;}
+.home .play {display: inline-block; width: 50px; height: 50px; border: 1px solid #fff; border-radius: 50%; font-size: 16px; text-align: center; line-height: 50px; transition: all 0.4s ease;}
+.home .play:hover {background: #fff; color: #000;}
+.home span {display: block; font-size: 12px; text-transform: uppercase; font-family: 'MuseoSansBold'; padding: 15px 0 0 0; margin: 20px 0 60px 0; position: relative;}
+.home span::after {content: ''; position: absolute; display: block; width: 80px; height: 2px; background: #fff; left: 50%; bottom: -20px; margin: 0 0 0 -40px;}
+
+/* 3. Services Section */
+.services {background-size: 65%; }
+.services .tt-number {position: relative; padding: 0 0 0 40px; margin: 0 0 40px 0;}
+.services .tt-number::before {position: absolute; content: ''; display: block; width: 5px; height: 5px; border-radius: 50%; background: #fff; top: 15px; left: 5px;}
+.services .tt-number span {color: #393939; font-family: 'MuseoSansLight'; font-size: 30px;}
+.services .tt-number + a {width: 100%; height: 400px; display: block; overflow: hidden; position: relative;}
+.services .tt-number + a img {padding-left: 25px; -webkit-object-fit: cover; object-fit: cover; height: 100%; width: 100%;}
+.services .tt-number + a > span {display: block; width: 40px; height: 100%; font-size: 14px; text-transform: uppercase; font-family: 'MuseoSansBold';  position: absolute; top: 0; left: 0; -webkit-writing-mode: vertical-lr; writing-mode: vertical-lr;}
+.services .tt-number + a span > span  {text-orientation: sideways;}
+
+	/* 3.1 Service modal */
+	#carousel-popup .collage {min-height: 320px;}
+	#carousel-popup .collage {overflow: hidden;}
+	#carousel-popup .collage img {width: 75%;}
+	#carousel-popup .collage .img-1 {float: right;}
+	#carousel-popup .collage .img-2 {margin: -130px 0 0 0; float: left;}
+	#carousel-popup .text p {margin: 20px 0 20px 60px; font-family: 'MuseoSansMedium'; text-align: justify;}
+	#carousel-popup .text h2 {margin: 0 0 40px 60px; text-transform: uppercase; font-size: 24px;}
+	#carousel-popup .share {text-align: center; border: 1px solid #fff; z-index: 3; display: inline-block;}
+	#carousel-popup .share li {}
+	#carousel-popup .share li span {display: block;}
+	#tt-modal-service .carousel-control {margin: 0 30px 0 0;}
+	#carousel-popup .meta {margin: 40px 0 0 0; padding: 20px 0 0 0; position: relative;}
+	#carousel-popup .meta::before {position: absolute; content: ''; height: 2px; width: 40px; display: block; top: 0; left: 0; background: #393939;}
+	#carousel-popup .meta span {font-size: 48px; font-family: 'MuseoSansMedium'; display: block;}
+	#tt-modal-service .modal-header .close {position: relative;}
+
+/* 4. Team Section */
+.team {background-size: 80%; }
+.team h2 {font-size: 36px; font-family: 'MuseoSansMedium'; text-transform: uppercase; margin: 0 0 30px 0;}
+.team img {width: 100%; padding-right: 25px;}
+.team .carousel-control {margin: 0 0 0 30px;}
+.team .tt-counter {font-size: 18px;}
+.team .tt-counter .total, .team .tt-counter .divider  {color: #393939; font-family: 'MuseoSansBold'; margin: 0 0 0 7px;}
+.team .enroll {border: 1px solid #fff; border-radius: 4px; text-align: center; margin: 40px 0 0; display: inline-block; padding: 10px 15px; transition: all 0.4s ease;}
+.team .enroll:hover {background: #fff; color: #000;}
+.team .tt-personal {overflow: hidden; position: relative;}
+.team .tt-meta {-webkit-writing-mode: vertical-lr; writing-mode: vertical-lr; position: absolute; top: 0; right: 0;}
+.team .tt-meta span {text-transform: uppercase; font-family: 'MuseoSansMedium'; margin: 0 0 20px 0; text-orientation: sideways;}
+.team p {font-size: 16px; text-align: justify;}
+.team .tt-spec {margin: 0 0 50px 0;}
+.team .tt-spec span {display: block; text-transform: uppercase; font-family: 'MuseoSansBold';}
+
+/* 5. Reviews Section */
+.reviews {background-size: 65%; }
+.reviews h2 {position: relative; padding: 30px 0; border-bottom: 1px solid #393939; margin: 30px 0; text-transform: uppercase; font-size: 24px; font-family: 'MuseoSansBold'; text-align: center; quotes: '"'}
+.reviews h2::before {position: absolute; content: open-quote; top: -40px; left: 50%; margin: 0 0 0 -15px; display: block; width: 30px; height: 30px; font-size: 60px;}
+.reviews .tt-before, .reviews .tt-after {margin: 20px 0 0 0; height: 180px; overflow: hidden; text-align: center; position: relative;}
+.reviews .tt-before img, .reviews .tt-after img {height: 100%;}
+.reviews .tt-before span, .reviews .tt-after span  {font-size: 16px; text-transform: uppercase; margin: 0 0 20px 0; font-family: 'MuseoSansMedium'; display: inline-block;}
+
+/* 6. Price Section */
+.prices {background-size: 75%;}
+.prices table tr {height: 30px;}
+.prices table tr td {vertical-align: top; font-size: 16px; color: #7c7c7c; font-family: 'MuseoSansMedium';}
+.prices table tr td span {font-size: 24px; text-transform: uppercase; color: #fff;}
+.prices table tr td:nth-child(1) {width: 40%;}
+.prices table tr td:nth-child(2) {width: 40%;}
+.prices table tr td:nth-child(3) {width: 20%;}
+
+/* 7. Gallery Section */
+.js-gallery a {display: block; overflow: hidden; height: 320px; position: relative;}
+.js-gallery a img {height: auto;}
+.js-gallery .overlay {position: absolute; top: 0; left: 15px; height: 100%; width: 100%; color: #fff; font-size: 36px; text-align: center; line-height: 320px; background: rgba(0, 0, 0, .8); opacity: 0; transition: all .4s ease;}
+.js-gallery a:hover .overlay {opacity: 1;}
+
+/* 8. Contacts Section */
+.contacts .tt-info {position: absolute; top: 230px; z-index: 1; background: #000; padding: 40px;}
+.contacts .tt-info p {margin: 0 0 30px 0; font-size: 16px; font-family: 'MuseoSansLight';}
+.contacts .tt-info p i {margin: 0 10px 0 0; font-size: 16px;}
+.contacts .tt-info p a {border-bottom: 1px dotted #fff;}
+
+/* 9. Responsive */
+/* 9.1 Phones: Portrait and Landscape */
+@media screen and (max-width: 480px){
+	footer {position: relative; margin: -100px 0 0 0;}
+	#map {height: 700px;}
+	.tt-scrollpane {height: auto;}
+	.team .tt-spec {margin: 25px 0;}
+	aside {width: 100%; margin-left: -100%; background: #000;}
+	.tt-breadcrumbs {margin: 0 0 30px 0;}
+	.tt-section {padding-bottom: 100px!important;}
+	.services .tt-number + a {height: 380px;}
+	.services .tt-number + a img {width: 100%;}
+	.services .tt-number + a span {left: 0;}
+	#tt-modal-service .text p {margin: 20px 0 20px 0;}
+	#tt-modal-service .text h2 {margin: 0 0 40px 0;}
+	#tt-modal-service .collage .img-2 {margin: -75px 0 0 0;}
+	#tt-modal-service .text {margin: 20px 0 0 0;}
+	#tt-modal-service .collage {min-height: 200px;}
+	#tt-modal-service .share {position: relative; padding: 10px 0; right: 0; margin: 10px 0; display: block;}
+	#tt-modal-service .share li:first-child {margin: 0;}
+	#tt-modal-service .share li {display: inline-block; margin: 0 0 0 20px;}
+	.tt-phone p {margin: 0; text-align: center;}
+	.tt-booking { margin: 20px 0; text-align: center;}
+	.tt-phone {text-align: center; margin: 0 20px;}
+	.tt-phone p::before {top: 11px;}
+	.team .tt-counter, .team h2 {margin: 0;}
+	.team h2 {font-size: 28px;}
+	.carousel-control {width: 20px; height: 20px; line-height: 18px; margin: 0 0 0 15px;}
+	.prices table tr td span, .prices table tr td {font-size: 12px;}
+	.js-gallery a {height: auto; margin: 0 0 15px 0;}
+	.js-gallery a img {width: 100%;}
+	.reviews, .prices, .team {background: #000;}
+	.reviews .tt-before, .reviews .tt-after {height: 110px;}
+	.reviews .tt-before img, .reviews .tt-after img {height: 100%; min-width: 100%;}
+	.home h1 {font-size: 18px;}
+	.home {background-repeat: no-repeat; background-position: 0 100px; background-size: 100%;}
+	.contacts .tt-info {left: 0; right: 0; top: 170px;}
+	footer {height: 100px;}
+	footer .tt-copyright, footer .tt-social {text-align: center; width: 100%;}
+	.modal .modal-footer button {margin: 20px 0 0; width: 100%;}
+	.services .container-fluid, .services .row, .services .carousel,
+	.team .container-fluid, .team .container-fluid > .row {height: 100%;}
+	.services .carousel-inner {height: 70%;}
+}
+/* 9.2 Tablets: Portrait */
+@media screen and (min-width: 480px) and (max-width: 768px){
+	/*html{overflow: auto;}*/
+	#carousel-popup .collage .img-2 {margin: -65px 0px 0px;}
+	.services .tt-number + a img {padding-left: 25px;}
+}
+
+/* 9.3 Tablets: Landscape */
+@media screen and (min-width: 768px){
+	.tt-scrollpane {height: auto;}
+	aside .tt-booking { margin: 20px 0; text-align: center;}
+	aside .tt-phone {text-align: center; margin: 0 20px;}
+	aside .tt-phone p::before {top: 11px;}
+	.prices table tr td span, .prices table tr td {font-size: 14px;}
+	.js-gallery a {margin-bottom: 30px;}
+	header .burger, header .cross {width: 15px;}
+	aside {width: 300px; margin-left: -300px; background: #000;}
+	.home h1 {margin: 90px 0 40px 0; font-size: 60px;}
+	#carousel-service-screen .carousel-inner > .item {display: block;}
+	.team .tt-personal img {margin: -50px 0 0 0;}	
+	.team .tt-spec {margin: 25px 0;}
+	.services .tt-number {padding: 0 0 0 20px;}
+	.services .tt-number + a span {left: 0px; z-index: 3;}
+	.services .tt-number + a {}
+	.services .tt-number + a img {}
+	.reviews .tt-before, .reviews .tt-after {height: 160px;}
+	.contacts .tt-info {top: 160px;}
+	#tt-modal-service .share {bottom: 0; position: absolute; right: -25px; padding: 20px;}
+	#tt-modal-service .share li {display: block; margin: 0 0 20px 0;}
+	#tt-modal-service .text {margin: 0;}
+	#map {height: 500px;}
+	footer {position: relative;}
+}
+/* 9.4 Desktop */
+@media screen and (min-width: 992px){
+	footer {position: absolute;}
+	.popup {position: absolute;}
+	#map {height: 100%;}
+	.tt-scrollpane {height: 550px;}
+	.tt-section {margin: 0;}
+	.tt-phone {text-align: left;}
+	.home h1 {margin: 100px 0 40px 0; font-size: 72px;}
+	.js-gallery a {margin-bottom: 15px;}
+	#carousel-popup .share {bottom: 0; position: absolute; right: -25px; padding: 20px;}
+	.team .tt-personal img {margin: 0;}	
+	.services .tt-scrollpane-mobile, .team .tt-scrollpane-mobile {height: 100%; width: 100%; overflow: auto;}
+}
